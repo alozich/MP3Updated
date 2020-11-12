@@ -14,10 +14,6 @@ using System.Media;
 using System.Windows.Controls;
 using System.Windows.Forms.Integration;
 using System.IO;
-using Accord.Controls;
-using Accord.Audio;
-using Accord.DirectSound;
-using Accord.Audio.Formats;
 
 namespace MP3
 {
@@ -25,7 +21,6 @@ namespace MP3
     {
         readonly static Sox sox = new Sox("C:\\Program Files (x86)\\sox-14-4-1\\sox.exe");
         EffectForm effectForm = new EffectForm();
-        Signal signal;
         
         
         public Form1()
@@ -53,7 +48,6 @@ namespace MP3
             string file = SelectFileButton();
             axWindowsMediaPlayer1.URL = file;
             SetAudioInfo(file);
-            //wavechart1.UpdateWaveform("Wave", signal.ToFloat());
             
         }
 
@@ -63,9 +57,6 @@ namespace MP3
             openFileDialog1.ShowDialog();
             string fileName = openFileDialog1.FileName;
             fileNameLabel.Text = fileName;
-            //sox.Process(fileName, "awesomesauce.wav");
-            //WaveDecoder waveDecoder = new WaveDecoder("awesomesauce.wav");
-            //signal = waveDecoder.Decode();
 
             return fileName;
         }

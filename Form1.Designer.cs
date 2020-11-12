@@ -35,7 +35,6 @@
             this.selectFileButton = new System.Windows.Forms.Button();
             this.fileNameLabel = new System.Windows.Forms.Label();
             this.applyEffectsButton = new System.Windows.Forms.Button();
-            this.wavechart1 = new Accord.Controls.Wavechart();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,25 +83,11 @@
             this.applyEffectsButton.Text = "Apply Effects...";
             this.applyEffectsButton.UseVisualStyleBackColor = true;
             // 
-            // wavechart1
-            // 
-            this.wavechart1.BackColor = System.Drawing.Color.Black;
-            this.wavechart1.ForeColor = System.Drawing.Color.Azure;
-            this.wavechart1.Location = new System.Drawing.Point(318, 321);
-            this.wavechart1.Name = "wavechart1";
-            this.wavechart1.RangeX = ((Accord.DoubleRange)(resources.GetObject("wavechart1.RangeX")));
-            this.wavechart1.RangeY = ((Accord.DoubleRange)(resources.GetObject("wavechart1.RangeY")));
-            this.wavechart1.SimpleMode = false;
-            this.wavechart1.Size = new System.Drawing.Size(233, 90);
-            this.wavechart1.TabIndex = 13;
-            this.wavechart1.Text = "wavechart1";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.wavechart1);
             this.Controls.Add(this.applyEffectsButton);
             this.Controls.Add(this.fileNameLabel);
             this.Controls.Add(this.selectFileButton);
@@ -124,7 +109,6 @@
         private System.Windows.Forms.Button selectFileButton;
         private System.Windows.Forms.Label fileNameLabel;
         private System.Windows.Forms.Button applyEffectsButton;
-        private Accord.Controls.Wavechart wavechart1;
     }
 }
 
