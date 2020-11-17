@@ -35,6 +35,8 @@
             this.selectFileButton = new System.Windows.Forms.Button();
             this.fileNameLabel = new System.Windows.Forms.Label();
             this.applyEffectsButton = new System.Windows.Forms.Button();
+            this.convertButton = new System.Windows.Forms.Button();
+            this.notificationLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,18 +78,39 @@
             // 
             // applyEffectsButton
             // 
-            this.applyEffectsButton.Location = new System.Drawing.Point(571, 388);
+            this.applyEffectsButton.Location = new System.Drawing.Point(590, 388);
             this.applyEffectsButton.Name = "applyEffectsButton";
             this.applyEffectsButton.Size = new System.Drawing.Size(89, 23);
             this.applyEffectsButton.TabIndex = 12;
             this.applyEffectsButton.Text = "Apply Effects...";
             this.applyEffectsButton.UseVisualStyleBackColor = true;
+            this.applyEffectsButton.Click += new System.EventHandler(this.ApplyEffect);
+            // 
+            // convertButton
+            // 
+            this.convertButton.Location = new System.Drawing.Point(509, 388);
+            this.convertButton.Name = "convertButton";
+            this.convertButton.Size = new System.Drawing.Size(75, 23);
+            this.convertButton.TabIndex = 13;
+            this.convertButton.Text = "Convert...";
+            this.convertButton.UseVisualStyleBackColor = true;
+            this.convertButton.Click += new System.EventHandler(this.ApplyConversion);
+            // 
+            // notificationLabel
+            // 
+            this.notificationLabel.AutoSize = true;
+            this.notificationLabel.Location = new System.Drawing.Point(506, 428);
+            this.notificationLabel.Name = "notificationLabel";
+            this.notificationLabel.Size = new System.Drawing.Size(0, 13);
+            this.notificationLabel.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.notificationLabel);
+            this.Controls.Add(this.convertButton);
             this.Controls.Add(this.applyEffectsButton);
             this.Controls.Add(this.fileNameLabel);
             this.Controls.Add(this.selectFileButton);
@@ -109,6 +132,8 @@
         private System.Windows.Forms.Button selectFileButton;
         private System.Windows.Forms.Label fileNameLabel;
         private System.Windows.Forms.Button applyEffectsButton;
+        private System.Windows.Forms.Button convertButton;
+        private System.Windows.Forms.Label notificationLabel;
     }
 }
 
